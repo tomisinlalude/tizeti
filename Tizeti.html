@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tizeti</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="icon" href="./img/History.jpg">
+	<style type="text/css">
+		body {
+			font-size: 1.1em;
+			overflow-x: hidden;
+		}
+
+		.btn {
+			margin-left: 30px;
+			box-shadow: 5px 8px 10px rgba(0,0,0,0.3);
+			border-radius: 10px;
+			color: black;
+			border-radius: 0;
+		}
+
+		.btn-md {
+			color: white;
+		}
+
+		.btn-view {
+			background-color: #4A98A1;
+		}
+
+		.navbar-brand {
+			width: 7%;
+		}
+
+		.navbar-nav {
+			margin-left: 20%;
+			top: 15%;
+		}
+
+		.nav-link {
+			justify-content: space-between;
+		}
+
+		.nav-link:hover {
+			border-bottom: 4px solid #17a2b8;
+
+		}
+
+		.active {
+			border-bottom: 4px solid #17a2b8;
+			font-weight: 800;
+		}
+
+		.main-page {
+			margin: 0 20%;
+		}
+
+		.todate1 {
+			left: 20px;
+		}
+
+		.powerbtn {
+			width: 30%;
+			margin-left: 30px;
+			cursor: pointer;
+			margin-top: -3%;
+		}
+
+		.media-logo {
+			margin-left: 85%;
+			margin-top: -2%;
+		}
+
+		.footer-space {
+			margin-left: 25px;
+		}
+
+		.history {
+			height: 70px;
+			background: #eee;
+			border-top: 1.5px solid #17a2b8;
+		}
+
+		.wechat{
+			width: 5%;
+			margin-left: 90%;
+		}
+
+		footer {
+			background-color: #4A98A1;
+			margin-top: 40px;
+			height: 50px;
+			width: 100%;
+			color: white;
+		}
+
+		.footer-content {
+			position: absolute;
+			margin-top: 0.7em;
+			margin-left: 3em;
+			overflow: hidden;
+			width: 100%;
+			text-overflow: ellipsis;
+		}
+
+		.tab-content {
+			position: absolute;
+			margin-top: 1em;
+			margin-left: 3em;
+		}
+
+		span {
+			color: white;
+		}
+
+		.bg-light {
+			box-shadow: none;
+		}
+
+		.duration {
+			margin-left: 28px;
+			color: black;
+		}
+
+		.title {
+			margin-left: 13px;
+		}
+
+		.navlink-space {
+			margin-left: 60px;
+		}
+
+		@media screen and (min-width: 320px) and (max-width: 878px) {
+			.footer-content {
+				margin-left: 0;
+				font-size: 0.6em;
+			}
+
+			.footer-space {
+			margin-left: 0;
+		}
+
+			.media-logo {
+				margin-top: -1.4em;
+			}
+
+			.copyright {
+				margin-top: 1em;
+				margin-left: 1em;
+			}
+
+			.navbar-brand{
+				width: 25%;
+			}
+
+			.powerbtn {
+				width: 30%;
+				margin-top: 10px;
+			}
+
+			.todate1 {
+			left: 0;
+			}
+		}
+
+		@media screen and (min-width: 693px) {
+			.to-date {
+				margin-left: 3px;
+			}
+		}
+
+		@media screen and (min-width: 830px) {
+			.to-date {
+				margin-left: 80px;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			footer {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-light">
+	  		<img class="navbar-brand" src="./img/History.jpg" alt="Tizeti logo">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		    	<li class="nav-item">
+		        	<a class="nav-link navlink-space" href="#">Overview</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link navlink-space" href="#">Profile</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link navlink-space" href="#">History</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link navlink-space" href="#">Service</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<button class="btn btn-success btn-md"><span>Fund Wallet</span></button>
+		      	</li>
+		      	<li class="nav-item">
+		        	<button class="btn btn-info btn-md"><span>Renew Plan</span></button>
+		      	</li>
+		      	<li class="nav-item">
+		        	<img class="powerbtn"src="./img/btn.jpg" alt="power button">
+		      	</li>
+
+	    	</ul>
+		</nav>
+
+	<div class="history">
+		<div class="tab-content">
+		History
+		</div>
+	</div><br>
+
+	<main class="main-page">
+		<div class="title">
+			<h4><b>Usage History</b></h4>
+		</div>
+		<div class="row">
+			<div class="dropdown">
+				<label for="user"><span class="duration">From(Date)</span></label><br>
+				<button id="user" type="button" class="btn btn-primary bg-light dropdown-toggle" data-toggle="dropdown">From Which Year</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">2015</a>
+					<a class="dropdown-item" href="#">2016</a>
+					<a class="dropdown-item" href="#">2017</a>
+					<a class="dropdown-item" href="#">2018</a>
+				</div><br>
+			</div>
+			<div class="dropdown to-date todate1">
+				<label for="user"><span class="duration">To(Date)</span></label><br>
+				<button id="user" type="button" class="btn btn-primary bg-light dropdown-toggle" data-toggle="dropdown">To Which Year</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">2015</a>
+					<a class="dropdown-item" href="#">2016</a>
+					<a class="dropdown-item" href="#">2017</a>
+					<a class="dropdown-item" href="#">2018</a>
+				</div>
+				<button class="btn btn-info btn-md btn-view">View</button>
+			</div>
+		</div>
+		<br><br><br>
+		<div class="title">
+			<h4><b>Payment History</b></h4>
+		</div>
+		<div class="row">
+			<div class="dropdown">
+				<label for="user"><span class="duration">From(Date)</span></label><br>
+				<button id="user" type="button" class="btn btn-primary bg-light dropdown-toggle" data-toggle="dropdown">From Which Month</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">January</a>
+					<a class="dropdown-item" href="#">Feburary</a>
+					<a class="dropdown-item" href="#">March</a>
+					<a class="dropdown-item" href="#">April</a>
+				</div><br>
+			</div>
+			<div class="dropdown to-date">
+				<label for="user"><span class="duration">To(Date)</span></label><br>
+				<button id="user" type="button" class="btn btn-primary bg-light dropdown-toggle" data-toggle="dropdown">To Which Month</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">January</a>
+					<a class="dropdown-item" href="#">Feburary</a>
+					<a class="dropdown-item" href="#">March</a>
+					<a class="dropdown-item" href="#">April</a>
+				</div>
+				<button class="btn btn-info btn-md">View</button>
+			</div>
+		</div>
+	</main>
+	<br>
+	<img class="wechat" src="./img/wechat.png" alt="chat button">
+
+	<footer>
+		<div class="footer-content"> 
+		<div class="copyright"> © 2018 Tizeti Network Limited. All rights reserved.</div>
+			<div class="media-logo">
+			<i class="fa fa-instagram footer-space"></i>
+			<i class="fa fa-twitter footer-space"></i>
+			<i class="fa fa-facebook footer-space"></i>
+			<div>
+		</div>
+	</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
